@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+body{
+    font-family: 'Fredoka One', cursive;
+    overflow: hidden;
+    background: conic-gradient(from 90deg at bottom right, cyan, rebeccapurple);
+}
+
+.container{
+    border: 1px solid black;
+    width: 95%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.digitalClock{
+    border: 1px solid black;
+    width: auto;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.137);
+}
+
+.digitalClock h1{
+    display: inline-block;
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: 5rem;
+}
+
+@media(max-width:768px){
+    #bar1, #bar2{
+        display: none;
+    }
+
+    .digitalClock{
+        text-align:center;
+        width:100%;
+    }
+
+    .digitalClock h1{
+        display:block;
+    }
+}
+
+@media(max-width: 480px){
+    .digitalClock h1{
+        font-size: 4re;
+    }
+}
+
